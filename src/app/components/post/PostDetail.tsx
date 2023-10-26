@@ -8,7 +8,7 @@ interface Props {
 }
 const PostDetail = ({ post }: Props) => {
   return (
-    <div className="bg-secondary px-8 py-10 rounded-md border border-gray-500">
+    <div className="bg-secondary md:px-8 px-5 py-10 rounded-md border border-gray-500">
       <h1 className="text-4xl font-bold">
         <span>{post?.attributes.title}</span>
       </h1>

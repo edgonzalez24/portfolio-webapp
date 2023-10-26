@@ -8,7 +8,7 @@ interface Props {
 }
 const PostCard = ({ post }: Props) => {
   return (
-    <div className="grid">
+    <div className="grid mb-10">
       <div className="flex flex-col items-center overflow-hidden rounded-lg border md:flex-row bg-secondary border-gray-500">
         <Link
           href={`/blog/${post.attributes.slug}`}
@@ -43,7 +43,7 @@ const PostCard = ({ post }: Props) => {
           <div>
             <Link
               href={`/blog/${post.attributes.slug}`}
-              className="font-semibold text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700"
+              className="font-semibold text-white transition duration-500 ease-in-out hover:text-gray-400 underline"
             >
               Read more
             </Link>
