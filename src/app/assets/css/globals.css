@@ -2,7 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-
+html {
+  padding: 0;
+  margin: 0;
+}
 body {
   color: #FFF;
   background-color: #1D1D1D;
@@ -21,11 +24,12 @@ h1 > span, .title-post > span{
 }
 
 .blob-container {
-  position: relative;
   width: 100vw;
   background-color: transparent;
-  overflow: hidden;
+  overflow-x: hidden;
   min-height: 100vh;
+  height: 100vh;
+  position: absolute;
 }
 
 .blob {
@@ -60,4 +64,28 @@ h1 > span, .title-post > span{
   50% {
       transform: translateX(0) rotate(180deg) scale(1.2);
   }
+}
+
+/* code viewer */
+pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  color: white;
+  background-color: #161b22;
+  border-radius: 6px;
+  word-wrap: normal;
+}
+
+code {
+  display: inline;
+  max-width: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
 }

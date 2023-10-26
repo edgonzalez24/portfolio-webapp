@@ -10,7 +10,7 @@ const PostList = ({ posts }: Props) => {
   if(posts && posts.length > 0 ) {
     content = posts.map((post) => <PostCard key={post.id} post={post} />)
   }
-  return <div className='mt-10 max-w-3xl mx-auto'>{content}</div>;
+  return <div className='mt-10'>{content}</div>;
 };
 
 export default PostList;

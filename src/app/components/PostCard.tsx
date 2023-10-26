@@ -8,8 +8,8 @@ interface Props {
 }
 const PostCard = ({ post }: Props) => {
   return (
-    <div className="grid ">
-      <div className="flex flex-col items-center overflow-hidden rounded-lg border md:flex-row bg-secondary">
+    <div className="grid">
+      <div className="flex flex-col items-center overflow-hidden rounded-lg border md:flex-row bg-secondary border-gray-500">
         <Link
           href={`/blog/${post.attributes.slug}`}
           className="group relative block h-48 w-full shrink-0 self-start overflow-hidden md:h-full md:w-32 lg:w-48"
@@ -17,7 +17,7 @@ const PostCard = ({ post }: Props) => {
           <img
             src={`${process.env.NEXT_PUBLIC_STRAPI}${post.attributes.image.data[0].attributes.url}`}
             loading="lazy"
-            alt="Photo by Minh Pham"
+            alt={post.attributes.title}
             className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
           />
         </Link>
