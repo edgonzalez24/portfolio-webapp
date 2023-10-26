@@ -2,8 +2,8 @@ import Hero from './components/Hero';
 
 const Page = () => {
   return (
-    <main  className='relative'>
-      <Hero  />
+    <main className='relative'>
+      <Hero />
     </main>
   )
 }

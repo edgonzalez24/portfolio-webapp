@@ -1,6 +1,6 @@
 'use client'
 
-import { QueryClient, useQuery } from '@tanstack/react-query';
+import { useQuery } from '@tanstack/react-query';
 import React from 'react';
 import axios from 'axios';
 import PostList from '../components/PostList';
@@ -16,7 +16,7 @@ const Page = () => {
   });
 
   return (
-    <main className="relative mx-auto max-w-screen-2xl px-4 md:px-8 pb-10 pt-24">
+    <main className="relative max-w-4xl mx-auto px-4 md:px-8 pb-10 pt-24">
       <h1>Blog</h1>
       {data && <PostList posts={data} />}
     </main>
