@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client"
 import Image from 'next/image'
-import Trail from "./Trail";
+import TrailAnimation from "./TrailAnimation";
 import image1 from '../assets/images/image1.jpg';
 import image2 from '../assets/images/image2.jpg';
 
@@ -11,11 +11,11 @@ const Hero = () => {
       <div className="mb-8 flex flex-wrap justify-between md:mb-16">
         <div className="mb-6 flex w-full flex-col justify-center sm:mb-12 lg:mb-0 lg:w-1/2 lg:pb-24 lg:pt-48">
           <div>
-            <Trail open={true}>
+            <TrailAnimation open={true}>
               <h1 className="mb-4 text-4xl font-bold text-black sm:text-5xl md:mb-8 xl:text-6xl">
                 <span>Hey 👋<br/>I&apos;m Edwin González</span>
               </h1>
-            </Trail>
+            </TrailAnimation>
           </div>
 
           <p className="max-w-md leading-relaxed text-gray-400 xl:text-lg mt-5">

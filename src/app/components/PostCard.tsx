@@ -19,10 +19,12 @@ const PostCard = ({ post }: Props) => {
             loading="lazy"
             alt={post.attributes.title}
             className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
+            width='100%'
+            height='100%'
           />
         </Link>
 
-        <div className="flex flex-col gap-2 p-4 lg:p-6">
+        <div className="flex flex-col w-full md:gap-2 p-4 lg:p-6">
           <span className="text-sm text-gray-200">
             {moment(post.attributes.publishedAt).format(
               'MMMM DD, YYYY ● h:mm A'

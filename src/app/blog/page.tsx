@@ -1,19 +1,11 @@
 'use client'
-
-import { useQuery } from '@tanstack/react-query';
 import React from 'react';
-import axios from 'axios';
 import PostList from '../components/PostList';
+import { useGetPostList } from '@/hooks/useGetPostList';
 
 const Page = () => {
-  const params = 'fields[0]=title&fields[1]=preview&fields[2]=slug&fields[3]=publishedAt&populate[image][fields][0]=url';
-  const { data, isPending, isError } = useQuery({
-    queryKey: ['posts'],
-    queryFn: async() => {
-      const { data : { data } } = await axios.get(`${process.env.NEXT_PUBLIC_STRAPI_BASE_URL}/posts?${params}`);
-      return data as Post[];
-    }
-  });
+  
+  const { data, isPending, isError } = useGetPostList();
 
   return (
     <main className="relative max-w-4xl mx-auto px-4 md:px-8 pb-10 pt-24">

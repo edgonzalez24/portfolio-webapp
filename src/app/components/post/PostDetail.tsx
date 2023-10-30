@@ -17,6 +17,8 @@ const PostDetail = ({ post }: Props) => {
           className="rounded-md"
           src={`${process.env.NEXT_PUBLIC_STRAPI}${post.attributes.image.data[0].attributes.url}`}
           alt={post?.attributes.title}
+          width="100%"
+          height="100%"
         />
       </div>
       <span className="text-xs">
