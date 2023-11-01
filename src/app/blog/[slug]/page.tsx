@@ -17,7 +17,7 @@ const Page = () => {
     <>
       {post && (
         <main className="relative max-w-4xl mx-auto px-4 md:px-8 pb-10 pt-24">
-          <div className="mb-10">
+          <div className="mb-5">
             <Link href="/blog" className="inline-flex transition duration-500 ease-in-out hover:text-gray-400 tex-white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
