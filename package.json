@@ -16,6 +16,7 @@
     "@tanstack/react-query-devtools": "^5.0.0",
     "moment": "^2.29.4",
     "next": "13.5.4",
+    "next-share": "^0.27.0",
     "react": "^18",
     "react-dom": "^18",
     "snarkdown": "^2.0.0"
